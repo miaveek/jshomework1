@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js homeework 1</title> 
+    <style>body{width: 1000px; margin: 5% auto;}</style>
+</head>
+<body>
+    <script>
+        /* Домашня робота
+         Создайте 3 переменных ( x = 6, y = 14, z =4 ) Выполните и отобразите результат следующих операций для этих переменных:
+         x += y - x++ * z ;
+         z = --x - y * 5 ;
+         y /= x + 5 % z;
+         z - x++ + y * 5;
+         x = y - x++ * z;
+         Дайте ответ как джаваскрипт выполнил расчет каждой операции.
+        */
+        var x = 6,
+            y = 14,
+            z = 4;
+            x += y - x++ * z;
+            result = x; 
+            document.write("Значения переменных для всех выражений : <code>x = 6, y = 14, z = 4</code></br></br>"+" Результат выполнения выражения x += y - x++ * z , x = " + result + "</br>");
+            document.write("Как считает js "+"6 + 14 - 6 * 4 = - 4</br>");
+        var x = 6,
+            y = 14,
+            z = 4;
+            z = --x - y * 5;
+            result = z;
+            document.write("<p>Результат выполнения операции <code>--x - y * 5 = </code>" + result+ "</br>" );
+            document.write("Как считает js "+"5 - 14 *  5 = -65");
+        var x = 6,
+            y = 14,
+            z = 4;
+            y /= x++ + 5 % z;  // 5 % 4 остаток 1, так как от 5 до 4 всего один шаг
+            result = y;
+            document.write("<p>Результат выполнения операции<code> y / x + 5 % z = </code>" + result + "</br>");
+            document.write("Как считает js "+"14 / (6 + 5 % 4) = 2 ");
+        var x = 6,
+            y = 14,
+            z = 4;
+            z - x++ +y*5;
+            result = z;
+            document.write("<p>Результат выполнения операции<code> z - x++ + y * 5 = </code>" + result + "</br>");
+            document.write("Как считает js  4 - 6 + 14 * 5 = 68");  
+        var x = 6,
+            y = 14,
+            z = 4;
+            x = y - x++ * z;
+            result = x;
+            document.write("<p>Результат выполнения операции<code> y - x++ * z =</code> " + result+ "</br>");
+            document.write("Как считает js 14 - 6 * 4  = -10");
+    </script> 
+</body>
+</html>
